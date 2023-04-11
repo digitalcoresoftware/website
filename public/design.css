@@ -14,6 +14,14 @@
 
     /* Fonts */
     --para-font: "Manrope", sans-serif;
+
+    /* Text Size */
+    --heading-txt: 25px;
+    --page-txt: 20px;
+    --lrg-para-txt: 16px;
+    --para-txt: 14px;
+    --details-txt: 12px;
+    --small-txt: 10px;
 }
 
 /* Defaults */
@@ -101,4 +109,10 @@ input:focus {
 input::placeholder {
     font-family: var(--para-font);
     letter-spacing: 1px;
+}
+
+/* General */
+.mask__fade__affect {
+    -webkit-mask-image: linear-gradient(#000 70%, transparent);
+    mask-image: linear-gradient(#000 70%, transparent);
 }

@@ -212,5 +212,6 @@ export default {
 <style scoped>
 .fill {
   fill: v-bind(colour);
+  stroke: none;
 }
 </style>
