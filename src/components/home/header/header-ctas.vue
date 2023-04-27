@@ -13,16 +13,20 @@
         <span class="cta__txt">Sign Up</span>
       </div>
     </router-link>
+
+    <header-menu id="menu-btn" />
   </div>
 </template>
 
 <script>
 import appSearch from "@/components/global/app-search.vue";
+import headerMenu from "@/components/home/header/header-menu.vue";
 
 export default {
   name: "header-ctas",
   components: {
     appSearch,
+    headerMenu,
   },
 };
 </script>
@@ -68,5 +72,23 @@ export default {
 #search-cta {
   border-radius: 10px;
   position: relative;
+}
+
+#menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  #auth-cta {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  .header__cta__wrapper {
+    grid-template-columns: auto 1fr;
+  }
 }
 </style>
